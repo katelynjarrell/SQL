@@ -1,0 +1,31 @@
+--Create a Shoe Store Database 
+
+CREATE TABLE inventory ( id INTEGER, name TEXT, quantity INTEGER, price INTEGER, sale_price INTEGER );
+
+INSERT INTO inventory VALUES ( 1, "Nike", 5, 50.00, 40.00 );
+INSERT INTO inventory VALUES ( 2, "Birkenstocks", 5, 75.00, 60.00 );
+INSERT INTO inventory VALUES ( 3, "Uggs", 15, 100.00, 80.00 );
+INSERT INTO inventory VALUES ( 4, "Vans", 25, 60.00, 45.00 );
+INSERT INTO inventory VALUES ( 5, "Hokas", 5, 150.00, 100.00 );
+INSERT INTO inventory VALUES ( 6, "Converse", 50, 70.00, 55.00 );
+INSERT INTO inventory VALUES ( 7, "Crocs", 15, 30.00, 20.00 );
+INSERT INTO inventory VALUES ( 8, "Adidas", 20, 65.00, 45.00 );
+INSERT INTO inventory VALUES ( 9, "On Clouds", 5, 120.00, 100.00 ); 
+INSERT INTO inventory VALUES ( 10, "New Balance", 25, 65.00, 45.00 );
+INSERT INTO inventory VALUES ( 11, "Tevas", 10, 45.00, 30.00 );
+INSERT INTO inventory VALUES ( 12, "Chacos", 12, 55.00, 45.00 );
+INSERT INTO inventory VALUES ( 13, "Hunter Boots", 10, 175.00, 150.00 ); 
+INSERT INTO inventory VALUES ( 14, "Golden Goose", 15, 545.00, 500.00 ); 
+INSERT INTO inventory VALUES ( 15, "Brooks", 75.00, 50.00 );
+
+--Display all items 
+SELECT * FROM inventory;
+
+--Order all items by sale price 
+SELECT * FROM inventory; 
+ORDER BY sale_price;
+
+--Show the 5 cheapest pairs of shoes 
+SELECT * FROM INVENTORY; 
+ORDER BY sale_price; 
+limit 5; 
